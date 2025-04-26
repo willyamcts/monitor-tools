@@ -23,10 +23,23 @@ Para instalar o Docker em seu Debian execute esse script [willyamcts/containers-
 
 
 # Ferramentas de monitoramento
-O foco das ferramentas escolhidas é no <ins>monitoramento ativo</ins> e <ins>monitoramento de disponibilidade</ins>. A seguir as ferramentas testadas:
+O foco das ferramentas escolhidas é no <ins>monitoramento ativo</ins> e <ins>monitoramento de disponibilidade</ins>. 
 
-* 
-* 
+A intenção é configurar monitoramento em ICMP, DNS query, HTTP(S) ou conexão TCP. SNMP também é considerado mas é apenas para fins de documentação, visto que requer configuração adicional no host a ser monitorado. 
+
+
+A seguir as ferramentas testadas:
+
+| Ferramenta | Release | Release Data | Demo |
+|--------|---------|---------|----------|
+|[Netdata](https://github.com/netdata/netdata) | x | | |
+|[Uptime Kuma](https://github.com/louislam/uptime-kuma) | 1.23.16 | 12/2024 | https://demo.kuma.pet/start-demo |
+|[OpenNMS](https://github.com/OpenNMS/opennms) | x | | |
+|[Pandora FMS](https://github.com/pandorafms/pandorafms) | x | | |
+|[Observium](https://observium.org/) | CE 24.12.13800 | 12/2024 | https://demo.observium.org/ | 
+|[Checkmk](https://github.com/Checkmk/checkmk) | x | |
+|[Icinga2](https://github.com/Icinga/icinga2) | x | |
+|[Cacti](https://github.com/Cacti/cacti) | x | |
 
 
 # Resultados
