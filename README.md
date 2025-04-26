@@ -10,10 +10,10 @@ Este repositório visa resumir e servir como guia para implementar ferramentas d
 
 ### Objetivo
 * centralizar informações sobre algumas ferramentas em um único repositório
-* facilitar a rápida implementação
-* agilizar a escolha de uma ferramenta de monitoramento que atenda a demanda do momento
+* facilitar a rápida implementação para teste
+* agilizar a escolha de uma ferramenta de monitoramento
 
-Após testar as ferramentas e escolher a que melhor atende seu cenário, consulte a documentação oficial para implementar em ambiente de produção.
+Após testar os projetos e escolher a que melhor atende seu cenário, consulte a documentação oficial para implementar em ambiente de produção.
 
 
 # Requisitos
