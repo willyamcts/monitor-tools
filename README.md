@@ -1,8 +1,8 @@
 # Indice
-- [Sobre](#-sobre)
-- [Requisitos](#-requisitos)
-- [Ferramentas de monitoramento](#-ferramentas-de-monitoramento)
-- [Resultados](#-resultados)
+- [Sobre](#sobre)
+- [Requisitos](#requisitos)
+- [Ferramentas de monitoramento](#ferramentas-de-monitoramento)
+- [Resultados](#resultados)
 
 
 # Sobre
