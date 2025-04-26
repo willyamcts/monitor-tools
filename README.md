@@ -33,6 +33,7 @@ A seguir as ferramentas testadas:
 | Ferramenta | Release | Release Data | Demo |
 |--------|---------|---------|----------|
 |[Netdata](https://github.com/netdata/netdata) | x | | |
+|[Zabbix](https://github.com/zabbix/zabbix) | x | | |
 |[Uptime Kuma](https://github.com/louislam/uptime-kuma) | 1.23.16 | 12/2024 | https://demo.kuma.pet/start-demo |
 |[OpenNMS](https://github.com/OpenNMS/opennms) | x | | |
 |[Pandora FMS](https://github.com/pandorafms/pandorafms) | x | | |
