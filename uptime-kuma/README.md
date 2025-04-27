@@ -20,3 +20,18 @@ Via web: `<IP>:3001`
 ```
 docker exec -it uptime-kuma sh -c 'npm run reset-password'
 ```
+
+
+## Prints
+
+### Home - visão geral
+
+![uptime_kuma-overview](images/Uptime_Kuma-home_overview.PNG)
+
+
+
+### Exemplo de notificação - Discord
+
+![uptime_kuma-notify](images/Uptime_Kuma-notification_discord.PNG)
+
+
