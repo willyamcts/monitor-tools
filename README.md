@@ -51,7 +51,7 @@ A seguir as ferramentas testadas:
  - Debian GNU/Linux 12 (bookworm) 6.1.0-32-amd64
 
 ### Configurações de monitoramento
-Os seguintes monitoramentos foram criados...
+Além das sondas padrões da ferramenta pós instalação, os seguintes monitoramentos foram criados...
  - **ICMP**: localhost, google.com, 1.1.1.1
  - **DNS query A 1.1.1.1**: google.com, uol.com.br
  - **DNS query A 8.8.4.4**: google.com, uol.com.br
