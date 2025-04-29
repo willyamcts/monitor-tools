@@ -52,7 +52,7 @@ A seguir as ferramentas testadas:
 
 ### Configurações de monitoramento
 Além das sondas padrões da ferramenta pós instalação, os seguintes monitoramentos foram criados...
- - **ICMP**: localhost, google.com, 1.1.1.1
+ - **ICMP**: google.com, 203.126.118.38
  - **DNS query A 1.1.1.1**: google.com, uol.com.br
  - **DNS query A 8.8.4.4**: google.com, uol.com.br
  - **DNS query A 203.126.118.38 (Singapura)**: google.com, uol.com.br
