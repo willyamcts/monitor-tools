@@ -48,10 +48,28 @@ volumes:
 Via web: `<IP>:19999`
 
 
+
 ## Configuração de plugins
 
+Após a adição de monitoramentos é necessário reiniciar o serviço do Netdata executando o comando abaixo:
 
+```
+docker exec -it netdata sh -c 'netdatacli shutdown-agent'
+```
 
+### Notificação via Discord
 
-## Prints
+ - Channel webhook: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+ - https://learn.netdata.cloud/docs/alerts-&-notifications/notifications/agent-dispatched-notifications/discord
+
+```
+cd /usr/local/netdata/etc
+nano ./edit-config health_alarm_notify.conf
+```
+
+```
+END_DISCORD="YES"  
+DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/XXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  
+DEFAULT_RECIPIENT_DISCORD="alerts"
+```
 
