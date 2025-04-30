@@ -147,3 +147,26 @@ jobs:
      - 203.126.118.38
 ```
 
+
+#### HTTP(S)
+
+ - https://learn.netdata.cloud/docs/collecting-metrics/synthetic-checks/http-endpoints
+ - https://github.com/netdata/netdata/tree/master/src/go/plugin/go.d/collector/httpcheck#readme
+
+```
+cd /usr/local/netdata/etc
+./edit-config go.d/httpcheck.conf
+```
+
+```
+jobs:
+  - name: "HTTPS Google"
+    url: https://google.com/
+    status_accepted: [ 200, 204 ]
+    tls_skip_verify: no
+
+  - name: "HTTPS UOL.com.br"
+    url: https://uol.com.br
+    status_accepted: [ 200, 204, 302 ]
+    tls_skip_verify: no
+```
