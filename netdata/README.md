@@ -170,3 +170,34 @@ jobs:
     status_accepted: [ 200, 204, 302 ]
     tls_skip_verify: no
 ```
+
+
+
+# Prints
+
+### Lista de hosts 
+
+Nessa lista pode ser adicionado alguns hosts para centralizar a visualização, mas há limitação na quantidade de hosts e requer conta Netdata.cloud.
+
+![Netdata-hosts](images/Netdata-hosts_list.PNG)
+
+
+### Visão geral - métricas do host
+![Netdata-overview](images/Netdata-metrics_system.PNG)
+
+
+### Dashboard customizado: CPU e memória do host
+
+![Netdata-dashboard_resume_host](images/netdata-summary_cpu_mem.gif)
+
+
+### Dashboard customizado: CPU e memória dos containers (cgroups)
+
+![Netdata-dashboard_custom](images/netdata-dash_custom.gif)
+
+
+### Exemplo de notificação - Discord
+
+![Netdata-notify_discord](images/Netdata-notify_discord)
+
+
