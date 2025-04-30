@@ -24,7 +24,7 @@ Para instalar o Docker em seu Debian execute esse script [willyamcts/containers-
 
 
 # Ferramentas de monitoramento
-O foco das ferramentas escolhidas é no <ins>monitoramento ativo de disponibilidade</ins> e tempo de resposta.
+O foco das ferramentas escolhidas é no <ins>monitoramento ativo</ins> de disponibilidade e tempo de resposta.
 
 A intenção é configurar monitoramento em ICMP, DNS query, HTTP(S) ou conexão TCP. SNMP também é considerado mas é apenas para fins de documentação, visto que pode requerer configuração adicional no host a ser monitorado. 
 
