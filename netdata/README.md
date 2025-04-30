@@ -49,6 +49,7 @@ Via web: `<IP>:19999`
 
 
 
+
 ## Configuração de plugins
 
 Após a adição de monitoramentos é necessário reiniciar o serviço do Netdata executando o comando abaixo:
@@ -71,5 +72,35 @@ nano ./edit-config health_alarm_notify.conf
 END_DISCORD="YES"  
 DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/XXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  
 DEFAULT_RECIPIENT_DISCORD="alerts"
+```
+
+
+
+#### Ping / ICMP
+
+ - https://learn.netdata.cloud/docs/collecting-metrics/synthetic-checks/ping
+
+```
+cd /usr/local/netdata/etc
+./edit-config go.d/ping.conf
+```
+
+```
+jobs:
+  - name: "ICMP Google"
+    hosts:
+      - google.com
+    network: ip4
+    autodetection_retry: 3
+    interval: 120
+    privileged: yes
+
+  - name: "ICMP Singapura DNS"
+    hosts:
+      - 203.126.118.38
+    network: ip4
+    autodetection_retry: 3
+    interval: 120
+    privileged: yes```
 ```
 
