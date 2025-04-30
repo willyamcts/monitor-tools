@@ -49,7 +49,6 @@ Via web: `<IP>:19999`
 
 
 
-
 ## Configuração de plugins
 
 Após a adição de monitoramentos é necessário reiniciar o serviço do Netdata executando o comando abaixo:
@@ -102,5 +101,49 @@ jobs:
     autodetection_retry: 3
     interval: 120
     privileged: yes```
+```
+
+
+#### DNS query
+
+ - Verificar plugin de DNS em https://learn.netdata.cloud/docs/collecting-metrics/dns-and-dhcp-servers
+ - Man de como implementar o plugin: https://learn.netdata.cloud/docs/collecting-metrics/dns-and-dhcp-servers/dns-query
+
+
+```
+cd /usr/local/netdata/etc
+./edit-config go.d/dns_query.conf
+```
+
+```
+update_every: 1
+autodetection_retry: 3
+
+jobs:
+ - name: DNS-1.1.1.1-A
+   record_types:
+     - A
+   domains:
+     - google.com
+     - uol.com.br
+   servers:
+     - 1.1.1.1
+ - name: DNS-8.8.4.4-A
+   record_types:
+     - A
+   domains:
+     - google.com
+     - uol.com.br
+   servers:
+     - 8.8.4.4
+     - 203.126.118.38
+ - name: DNS-Singapura-A
+   record_types:
+     - A
+   domains:
+     - google.com
+     - uol.com.br
+   servers:
+     - 203.126.118.38
 ```
 
