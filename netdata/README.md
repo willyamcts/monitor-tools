@@ -75,7 +75,7 @@ DEFAULT_RECIPIENT_DISCORD="alerts"
 
 
 
-#### Ping / ICMP
+### Ping / ICMP
 
  - https://learn.netdata.cloud/docs/collecting-metrics/synthetic-checks/ping
 
@@ -104,7 +104,7 @@ jobs:
 ```
 
 
-#### DNS query
+### DNS query
 
  - Verificar plugin de DNS em https://learn.netdata.cloud/docs/collecting-metrics/dns-and-dhcp-servers
  - Man de como implementar o plugin: https://learn.netdata.cloud/docs/collecting-metrics/dns-and-dhcp-servers/dns-query
@@ -148,7 +148,7 @@ jobs:
 ```
 
 
-#### HTTP(S)
+### HTTP(S)
 
  - https://learn.netdata.cloud/docs/collecting-metrics/synthetic-checks/http-endpoints
  - https://github.com/netdata/netdata/tree/master/src/go/plugin/go.d/collector/httpcheck#readme
@@ -188,16 +188,16 @@ Nessa lista pode ser adicionado alguns hosts para centralizar a visualização, 
 
 ### Dashboard customizado: CPU e memória do host
 
-![Netdata-dashboard_resume_host](images/netdata-summary_cpu_mem.gif)
+![Netdata-dashboard_resume_host](images/Netdata-summary_cpu_mem.gif)
 
 
 ### Dashboard customizado: CPU e memória dos containers (cgroups)
 
-![Netdata-dashboard_custom](images/netdata-dash_custom.gif)
+![Netdata-dashboard_custom](images/Netdata-dash_custom.gif)
 
 
 ### Exemplo de notificação - Discord
 
-![Netdata-notify_discord](images/Netdata-notify_discord)
+![Netdata-notify_discord](images/Netdata-notify_discord.PNG)
 
 
