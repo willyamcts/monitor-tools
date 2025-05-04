@@ -83,3 +83,21 @@ Via web em: `<IP>:8080`
 
 ### DNS query
 Não foi possível realizar o monitoramento desejado da consulta DNS, o retorno do plugin só verifica se o DNS está resolvendo para um IP esperado. A intenção do teste seria coletar o tempo de resolução da consulta de DNS.
+
+
+### Certificado SSL
+O monitoramento da validade de certificado SSL é possível utilizando plugin.
+
+1. Download plugin [Python SSL Certificate expiry monitoring](https://pandorafms.com/library/python-ssl-certificate-expiry-monitoring/)
+
+```
+wget https://pandorafms.com/library/wp-content/uploads/2024/07/python_ssl_plugin.zip
+
+unzip -K python_ssl_plugin.zip -d /usr/local/pandora/server/util/plugin/
+chown 1000:0 /usr/local/pandora/server/util/plugin/ssl_plugin.py
+
+# test
+python3 /usr/local/pandora/server/util/plugin/ssl_plugin.py google.com 443
+```
+
+Adicionar o módulo (plugin) na web: https://pandorafms.com/community/knowledge-base/create-a-server-plugin-for-pandora-fms/
